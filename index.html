@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+  <meta charset="utf-8" />
+  <title>Toystory Swiper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="./css/style.css" />
-  <title>Swiper</title>
+  <script src="./js/custom.js"></script>
 </head>
 <body>
-  <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+  <swiper-container class="swiper" effect="cube" grab-cursor="true" cube-effect-shadow="true"
+    cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+    <swiper-slide>
+      <img src="./src/TSPA08.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./src/TSPA12.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./src/TSPA10.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./src/TSPA11.webp" />
+    </swiper-slide>
+  </swiper-container>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <!-- <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./src/TSPA08.webp" alt="토이스토리1" /></div>
+      <div class="swiper-slide"><img src="./src/TSPA09.webp" alt="토이스토리2" /></div>
+      <div class="swiper-slide"><img src="./src/TSPA10.webp" alt="토이스토리3" /></div>
+      <div class="swiper-slide"><img src="./src/TSPA11.webp" alt="토이스토리4" /></div>
+    </div>
+  </div> -->
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
 </body>
 </html>
